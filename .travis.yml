@@ -8,7 +8,7 @@ addons:
   sonarcloud:
     organization: "ggwozdz90-github"
     token:
-      secure: "8cbfba53d35acebd9774a6dee3760187a472b627"
+      secure: "nabziVfCWi7um9pieYMNAb6wVRqqP8tTAKYpwEBB5GYkBwAMmJQG50TBuragkd07jtNfi7HvsdCDqKwUDgkYQgOgJZL4jbtBMxI+3booLdr48WuC4OhvcH0SZM6bY/xPL1+u1cmYr0gczgHb/kmwp7ZgN9YXXoOmByBvuvI4o3TVi8IaW7EIpUvQ892J3BU2vstrQYuv12zXnD/bQATvbe+jYqR+2bfgVov94snqU6EV/GbUJQu1H6lk2Py4ZYjBWaoHFtRJGdk2riJ2fRmmmkJRALIO+bBJi2irQQGOShX2dYTN76KvjGaTTXKpdHAg+j5RZ3ibikjtu4Zn+7NbaThRtV8o9Rknby7LyCLjyoNbml41WycG2+IIOLsjryFxHYQDI2o1F4enV/qvhahtZQphydss01x+U814VDThBnPj4LMMSapvFskO/n3PgqH7T0t7qTUM+6JZxWtxWbK2ayJ+2ZVGKCa+QJbO9llgk7kEC9L48CaWSiomj16UsQeY+ewSW9KNje+HQfCllEarO5/ek9qaIXqMxn9o8ZGRCWrPDGYVhElOTrmLZ9RIdpaP2ly24Swr7A0JXpYns/8xGAjbmtRhMZXEXKXsY8KxNzUrIr5GkD9bUQHTfjIf+Ud+N+hLGadO+j0oLl9K67Q9vd4cgOM2LdJQTsyWUKH9Rkc="
 
 script:
   - dotnet restore ./src/Core/StorageClient.Core/StorageClient.Core.csproj
