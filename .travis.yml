@@ -1,0 +1,22 @@
+language: csharp
+mono: none
+os: linux 
+dist: trusty
+dotnet: 2.1
+
+addons:
+  sonarcloud:
+    organization: "ggwozdz90-github"
+    token:
+      secure: "8cbfba53d35acebd9774a6dee3760187a472b627"
+
+script:
+  - dotnet restore ./src/Core/StorageClient.Core/StorageClient.Core.csproj
+  - dotnet build ./src/Core/StorageClient.Core/StorageClient.Core.csproj
+  - dotnet restore ./src/Providers/StorageClient.Provider.Azure/StorageClient.Provider.Azure.csproj
+  - dotnet build ./src/Providers/StorageClient.Provider.Azure/StorageClient.Provider.Azure.csproj
+  - dotnet restore ./src/Clients/StorageClient.Azure/StorageClient.Azure.csproj
+  - dotnet build ./src/Clients/StorageClient.Azure/StorageClient.Azure.csproj
+  - dotnet restore ./src/Tests/StorageClient.Azure.Test/StorageClient.Azure.Test.csproj
+  - dotnet build ./src/Tests/StorageClient.Azure.Test/StorageClient.Azure.Test.csproj
+  - sonar-scanner

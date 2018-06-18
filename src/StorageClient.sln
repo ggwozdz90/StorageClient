@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{9217509E-1480-45A7-AC05-796FCB1B5DA3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Providers", "Providers", "{3E2F7962-FF91-4204-B94F-CE862738AF65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{2F7AA666-41B0-4C48-8290-56F25EB5DC83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorageClient.Azure", "Clients\StorageClient.Azure\StorageClient.Azure.csproj", "{A928E924-0A5A-45B8-AF4C-EF28FDE7A200}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorageClient.Core", "Core\StorageClient.Core\StorageClient.Core.csproj", "{8B4AB912-792D-4C8F-9248-DE536E0DE236}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorageClient.Provider.Azure", "Providers\StorageClient.Provider.Azure\StorageClient.Provider.Azure.csproj", "{ADABEE80-8E59-4987-B459-D1D0ABF90E7A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{BC7477CB-E89E-48E1-8844-6B04B27E71E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorageClient.Azure.Test", "Tests\StorageClient.Azure.Test\StorageClient.Azure.Test.csproj", "{829D2477-458E-46B3-BBF0-F922E4CA7306}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DA8789C7-5FB8-43A2-8BA3-3D895A2CE9AB}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+		..\.travis.yml = ..\.travis.yml
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A928E924-0A5A-45B8-AF4C-EF28FDE7A200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A928E924-0A5A-45B8-AF4C-EF28FDE7A200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A928E924-0A5A-45B8-AF4C-EF28FDE7A200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A928E924-0A5A-45B8-AF4C-EF28FDE7A200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B4AB912-792D-4C8F-9248-DE536E0DE236}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B4AB912-792D-4C8F-9248-DE536E0DE236}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B4AB912-792D-4C8F-9248-DE536E0DE236}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B4AB912-792D-4C8F-9248-DE536E0DE236}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADABEE80-8E59-4987-B459-D1D0ABF90E7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADABEE80-8E59-4987-B459-D1D0ABF90E7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADABEE80-8E59-4987-B459-D1D0ABF90E7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADABEE80-8E59-4987-B459-D1D0ABF90E7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{829D2477-458E-46B3-BBF0-F922E4CA7306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{829D2477-458E-46B3-BBF0-F922E4CA7306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{829D2477-458E-46B3-BBF0-F922E4CA7306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{829D2477-458E-46B3-BBF0-F922E4CA7306}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A928E924-0A5A-45B8-AF4C-EF28FDE7A200} = {2F7AA666-41B0-4C48-8290-56F25EB5DC83}
+		{8B4AB912-792D-4C8F-9248-DE536E0DE236} = {9217509E-1480-45A7-AC05-796FCB1B5DA3}
+		{ADABEE80-8E59-4987-B459-D1D0ABF90E7A} = {3E2F7962-FF91-4204-B94F-CE862738AF65}
+		{829D2477-458E-46B3-BBF0-F922E4CA7306} = {BC7477CB-E89E-48E1-8844-6B04B27E71E9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B2F67500-CBA8-41D9-B998-43CA952F5874}
+	EndGlobalSection
+EndGlobal

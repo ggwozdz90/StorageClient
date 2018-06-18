@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/src/.vs/
+/src/Clients/StorageClient.Azure/obj
+/src/Core/StorageClient.Core/obj
+/src/Providers/StorageClient.Provider.Azure/obj
+/src/Tests/StorageClient.Azure.Test/obj
+/src/Clients/StorageClient.Azure/bin/
+/src/Core/StorageClient.Core/bin/
+/src/Providers/StorageClient.Provider.Azure/bin/
+/src/Tests/StorageClient.Azure.Test/bin/
