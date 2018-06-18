@@ -4,12 +4,6 @@ os: linux
 dist: trusty
 dotnet: 2.1
 
-addons:
-  sonarcloud:
-    organization: "ggwozdz90-github"
-    token:
-      secure: "gHqKs3mdbj/19D/F8/M7Hnqfa9AbLcCCk3j6ygWZdnkVqIyZEqKs0NgDL5gwfa732yHPV5srCvOm5AcLPKI3wE8CzjA88utZoadqXPTBG0qXPZMU+dj+7ZMSRS0Ym88EEaSbXgtAXqF/VdXqo1/xRZMHgnaGp0JgJFr/mXRsmTMnpaCj7R57TpyR8+mnuNbIAKoJejKpDvfdF2ubrO1fiYFf7AMy+pg29d/itcTPOe2vEHApt7E4IaXAhsjI4JUAfEd5lXpbtFJSRrskw8fMv5cKhjsu7ujAFwuts59CQ0SGSx5xe0w2+4EgS+v2dgbsBGHj70YSpYsf53IdWHQ4Up/NAQgOyhmRw95wHVd9+Roq7NYdl8FyALzqkJsNPZ8uVa2jO4QFC9XEE0iJFVDvGOs3eXV8SFZyndORWyyxuDPSXAuDM3hGAyL3w7qsoDYBFTU+0v6uwM1kkj4IKYTRBZ8744F+LnhiiXa5aA95Oa4p3+L/qjPfomkYsd7vFZ0EtT57mB4BGqVrGk8uj0jptl0Ag5Cu/PBfg64HDqbURIo5P6KQoHq5n2jvvgbp1mWKMVles7yifa2jRxCwrHdGs05rPFGQF6zhG6JFUiyQMceguu5ugcuWc1Kbetl4S6g3aUDOP0cFCxa0sr2bvkGaOIn4f2zHC3bOncTPBqBNIFY="
-
 script:
   - dotnet restore ./src/Core/StorageClient.Core/StorageClient.Core.csproj
   - dotnet build ./src/Core/StorageClient.Core/StorageClient.Core.csproj
@@ -19,4 +13,3 @@ script:
   - dotnet build ./src/Clients/StorageClient.Azure/StorageClient.Azure.csproj
   - dotnet restore ./src/Tests/StorageClient.Azure.Test/StorageClient.Azure.Test.csproj
   - dotnet build ./src/Tests/StorageClient.Azure.Test/StorageClient.Azure.Test.csproj
-  - sonar-scanner
